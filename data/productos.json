@@ -1,0 +1,74 @@
+[
+    {
+      "img": "camisetaBarcelona.jpeg",
+      "name": "camiseta barca 2016",
+      "owner": "Lionel Messi",
+      "price": 80000,
+      "price_descount": 55000,
+      "id": 1
+    },
+    {
+      "img": "argentina94.jpg",
+      "name": "camiseta argentina 94 ",
+      "owner": "Diego Maradona",
+      "price": 100000,
+      "price_descount": 80000,
+      "id": 2
+    },
+    {
+      "img": "boca2010.jpg",
+      "name": "camiseta boca.jrs 2010",
+      "owner": "Martin Palermo",
+      "price": 65000,
+      "price_descount": 40000,
+      "id": 3
+    },
+    {
+      "img": "argentina2006.jpg",
+      "name": "camiseta argentina 2006 ",
+      "owner": "Lionel Messi",
+      "price": 80000,
+      "price_descount": 65000,
+      "id": 4
+    },
+    {
+      "img": "sanlorenzo2014.jpeg",
+      "name": "camiseta san lorenzo 2014",
+      "owner": "Nestor Ortigoza",
+      "price": 50000,
+      "price_descount": 35000,
+      "id": 5
+    },
+    {
+      "img": "argentina2023.jpeg",
+      "name": "camiseta argentina 2023 ",
+      "owner": "Emiliano Martinez",
+      "price": 80000,
+      "price_descount": 60000,
+      "id": 6
+    },
+    {
+        "img": "arsenal05.jpeg",
+        "name": "camiseta arsenal 2005",
+        "owner": "Thierry Henry",
+        "price": 75000,
+        "price_descount": 40000,
+        "id": 7
+      },
+      {
+        "img": "milan03.jpeg",
+        "name": "camiseta milan 2003",
+        "owner": "Kaka",
+        "price": 60000,
+        "price_descount": 30000,
+        "id": 8
+      },
+      {
+        "img": "francia98.jpeg",
+        "name": "camiseta francia 98 ",
+        "owner": "Zinedine Zidane",
+        "price": 90000,
+        "price_descount": 75000,
+        "id": 9
+      }
+  ]
