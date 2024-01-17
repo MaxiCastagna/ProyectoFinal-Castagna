@@ -2,12 +2,9 @@
 let articulosCarrito = [];
 
 const contenedorCarrito = document.querySelector("#lista-carrito tbody");
-//console.log(contenedorCarrito);
-const listaProductos = document.querySelector("#lista-productos");
-//console.log(listaProductos);
 
-//const productos = document.querySelectorAll(".agregar-carrito");
-//console.log(productos);
+const listaProductos = document.querySelector("#lista-productos");
+
 
 const vaciarCarrito = document.querySelector("#vaciar-carrito");
 
@@ -16,7 +13,7 @@ const carrito = document.querySelector("#carrito");
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Muestra el cartel de bienvenida al cargar la página
+
   Swal.fire({
     title: '¡Bienvenido!',
     text: 'Gracias por visitar nuestro sitio web.',
@@ -28,17 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function agregarProducto(evt) {
   evt.preventDefault();
-  //console.log(evt.target.classList.contains("agregar-carrito"));
+
   if (evt.target.classList.contains("agregar-carrito")) {
-    //console.log("Es aca donde queria llegar");
-    //console.log(evt.target.parentElement.parentElement);
+ 
     const producto = evt.target.parentElement.parentElement;
     leerDatosProducto(producto);
   }
 }
 
 function leerDatosProducto(item) {
-  //console.log(item);
+
   console.log(item.querySelector("a").getAttribute("data-id"));
   const inforProducto = {
     imagen: item.querySelector("img").src,
@@ -47,9 +43,7 @@ function leerDatosProducto(item) {
     id: item.querySelector("a").getAttribute("data-id"),
     cantidad: 1,
   };
-  //console.log(inforProducto);
 
-  // si el producto esta en el carrito
   if (articulosCarrito.some((prod) => prod.id === inforProducto.id)) {
     const productos = articulosCarrito.map((producto) => {
       if (producto.id === inforProducto.id) {
@@ -63,7 +57,7 @@ function leerDatosProducto(item) {
     });
     articulosCarrito = [...productos];
   } else {
-    //articulosCarrito.push(inforProducto);
+   
     articulosCarrito = [...articulosCarrito, inforProducto];
   }
   console.log(articulosCarrito);
